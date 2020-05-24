@@ -19,11 +19,11 @@ import statistics  #get mean etc
 
 # CONSTANTS - weights in grams
 GOAL = 50000 
-NUM_RATS = 20
+NUM_RATS = 50
 INITIAL_MIN_WT = 200
 INITIAL_MAX_WT = 600 
 INITIAL_MODE_WT = 300 
-MUTATE_ODDS = 0.01
+MUTATE_ODDS = 0.05
 MUTATE_MIN = 0.5
 MUTATE_MAX = 1.2
 LITTER_SIZE = 8 
@@ -116,6 +116,7 @@ if __name__ == '__main__':
     duration = end_time - start_time
     print("\nRuntime for this program was {} seconds".format(duration))
 
-# After running, will take 37.8 years to produce the optimally weighted offspring.
-#How could this algo be optimised? : future work
 
+#Changed initial population to 50 rats and increased mutation exposure to 0.05
+# After running, will take 14 years to produce the optimally weighted offspring.
+#Could this algo be optimised even more? 
